@@ -12,14 +12,14 @@ import {selectCurrentUser} from '../../redux/user/user.selectors'
 
 const Header = ({currentUser, hidden}) => (
     <div className = 'header'>
-            <Link className = 'logo-container' to= '/'>
+            <Link className = 'logo-container' to= '/react-e-commerce/'>
                 <Logo className='logo' />
             </Link>
             <div className='options'>
-                <Link className='option' to='/shop'>
+                <Link className='option' to='/react-e-commerce/shop'>
                     SHOP
                 </Link>
-                <Link className='option' to='/contact'>
+                <Link className='option' to='/react-e-commerce/contact'>
                     CONTACT
                 </Link>
                 {
@@ -28,7 +28,7 @@ const Header = ({currentUser, hidden}) => (
                             SIGN OUT
                     </div>)
                     :(
-                    <Link className='option' to='/signin'>SIGN IN</Link>
+                    <Link className='option' to='/react-e-commerce/signin'>SIGN IN</Link>
                     )}
                 <CartIcon />
             </div>
